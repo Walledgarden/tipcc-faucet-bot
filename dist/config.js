@@ -1,4 +1,6 @@
-export default {
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.default = {
     token: "",
     owners: [""],
     prefix: '-',
@@ -13,4 +15,4 @@ export default {
         }
     ],
     cooldown: (12 * 60 * 60 * 1000), // 12 Hours
-}
+};
