@@ -1,0 +1,28 @@
+{
+  "name": "discord.js-template-typescript",
+  "version": "1.0.0",
+  "description": "A simple Discord.JS v13 Typescript template.",
+  "main": "src/index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Walledgarden/discord.js-template-ts.git"
+  },
+  "author": "Walledgarden",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Walledgarden/discord.js-template-ts/issues"
+  },
+  "homepage": "https://github.com/Walledgarden/discord.js-template-ts#readme",
+  "dependencies": {
+    "@discordjs/builders": "^0.12.0",
+    "@discordjs/rest": "^0.3.0",
+    "discord-api-types": "^0.26.1",
+    "discord.js": "^13.6.0",
+    "mysql2": "^2.3.3",
+    "ts-node": "^10.4.0",
+    "typescript": "^4.5.5"
+  }
+}
