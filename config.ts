@@ -1,13 +1,16 @@
 export default {
     token: "",
     owners: [""],
-    prefix: '!',
-    sql: {
-        host: "",
-        username: "",
-        password: "",
-        database: ""
-    },
+    prefix: '-',
     allowlisted_bots: [""],
-    emotes: {}
+    faucet_currencies: [
+        {
+            name: 'BTC',
+            min: 0.0001,
+            max: 0.0002,
+            decimals: 4,
+            usd: true
+        }
+    ],
+    cooldown: (12 * 60 * 60 * 1000), // 12 Hours
 }
