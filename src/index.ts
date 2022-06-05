@@ -9,13 +9,13 @@ export const client: Client = new Client({ intents: [Intents.FLAGS.GUILDS, Inten
 export const MessageCommands = new Collection();
 
 for (const file of (fs.readdirSync(path.resolve(__dirname, './MessageCommands')).filter(f => (/(.ts|.js)$/).test(f)))) {
-    const command = require(`./MessageCommands/${file}`);
-    MessageCommands.set(file.match(/(.+)(.ts|.js)/)?.slice(1, -1).join(""), command);
+  const command = require(`./MessageCommands/${file}`);
+  MessageCommands.set(file.match(/(.+)(.ts|.js)/)?.slice(1, -1).join(''), command);
 }
 
 for (const file of (fs.readdirSync(path.resolve(__dirname, './Events')).filter(f => (/(.ts|.js)$/).test(f)))) {
-    const event = require(`./Events/${file}`);
-    client.on((file.match(/(.+)(.ts|.js)/)?.slice(1, -1) ?? []).join(""), event.default.run)
+  const event = require(`./Events/${file}`);
+  client.on((file.match(/(.+)(.ts|.js)/)?.slice(1, -1) ?? []).join(''), event.default.run);
 }
 
 client.login(config.token);

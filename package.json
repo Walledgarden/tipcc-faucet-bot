@@ -4,7 +4,8 @@
   "description": "A simple Discord.JS v13 Typescript template.",
   "main": "src/index.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "npx eslint . --ext .js,.jsx,.ts,.tsx --fix"
   },
   "repository": {
     "type": "git",
@@ -22,5 +23,10 @@
     "discord.js": "^13.6.0",
     "tip.cc-tip-parser": "^2.1.0",
     "typescript": "^4.5.5"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.26.0",
+    "@typescript-eslint/parser": "^5.26.0",
+    "eslint-config-airbnb-typescript": "^17.0.0"
   }
 }
